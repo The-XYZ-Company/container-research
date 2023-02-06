@@ -169,5 +169,12 @@ round-trip min/avg/max = 2.119/2.150/2.181 ms
 [root@docker-testing ~]#
 ```
 
-### 
+### Note:- For Instructor 
 
+<ol>
+    <li> make sure if you are using a different docker image then sh shell may not work os use bash also </li>
+    <li> it is also possible that ifconfig command may not present in your container either install it of use some different command like ip addrs </li>
+    <li> it is also possible that ping command is also not there so install it as per your container image </li>
+</ol>
+
+### enjoy Learning ..
