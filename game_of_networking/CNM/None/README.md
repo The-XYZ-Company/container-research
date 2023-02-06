@@ -135,3 +135,23 @@ ping: sendto: Network unreachable
     <li> it is also possible that ifconfig command may not present in your container either install it of use some different command like ip addrs </li>
     <li> it is also possible that ping command is also not there so install it as per your container image </li>
 </ol>
+
+
+## Using None Networking with docker compose 
+
+### Verify docker compose is installed
+
+```
+[root@docker-testing ~]# docker-compose version 
+Docker Compose version v2.15.1
+[root@docker-testing ~]# 
+[root@docker-testing ~]# docker-compose -v
+Docker Compose version v2.15.1
+[root@docker-testing ~]# 
+```
+
+### creating docker-compose file 
+
+```
+
+```
