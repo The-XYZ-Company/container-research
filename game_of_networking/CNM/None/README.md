@@ -153,5 +153,36 @@ Docker Compose version v2.15.1
 ### creating docker-compose file 
 
 ```
+version: '3.8'
+services:
+  xyz-test:
+    image: alpine
+    container_name: testc2
+    command: ["sleep","10000"]
+    network_mode: none 
+```
+
+### running compose and testing service 
 
 ```
+[root@docker-testing ~]# docker-compose up -d
+[+] Running 1/1
+ ⠿ Container testc2  Started                                                                                   0.4s
+[root@docker-testing ~]# docker-compose ps 
+NAME                IMAGE               COMMAND             SERVICE             CREATED             STATUS              PORTS
+testc2              alpine              "sleep 10000"       xyz-test            7 seconds ago       Up 6 seconds        
+[root@docker-testing ~]# docker-compose exec -it xyz-test  sh 
+/ # ifconfig 
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+/ # ping google.com 
+ping: bad address 'google.com'
+```
+
+
