@@ -183,6 +183,9 @@ lo        Link encap:Local Loopback
 
 / # ping google.com 
 ping: bad address 'google.com'
+
+/ # exit 
 ```
 
+### Enjoy Learning ..
 
