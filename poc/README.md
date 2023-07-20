@@ -21,6 +21,14 @@
 
 <details><summary> SHOW </summary> 
 <ol>
-    <li> hello </li>
+    <li> Docker installs two custom iptables chains named DOCKER-USER and DOCKER </li>
+    <li> it ensures that incoming packets are always checked by these two chains first </li>
+    <li> These chains are part of the FORWARD chain </li>
+    <li> Any New container we create there iptables rules gonna add in DOCKER chain do not modify this chain manually </li>
+    <li> If you need to add any things which gonna load even before DOCKER chain then add them into DOCKER_USER chain </li>
 </ol>
 </details>
+
+### Priority of iptables CHAIN
+
+<p>  DOCKER_USER --> DOCKER -->  ANY OTHER </p>
