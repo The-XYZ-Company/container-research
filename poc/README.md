@@ -20,11 +20,10 @@
 ## Iptables Most important point 
 
 <details><summary> SHOW </summary> 
-    <p>
+<p>
         ```bash
            1. by default 
            2. ok
-
         ```
-    </p>
+</p>
 </details>
