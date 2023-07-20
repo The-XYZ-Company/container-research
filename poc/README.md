@@ -22,7 +22,7 @@
 <details>
     <summary> SHOW </summary>
     <p>
-        ```
+        ```bash
         1. by default 
 
         ```
