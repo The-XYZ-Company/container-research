@@ -1,9 +1,10 @@
 # Poc 
 ## Docker and iptables: a dynamic duo for networking virtuosity
 
-### More understanding 
+### More understanding about iptables with docker 
 
-<p> 
+
+
 In Chain FORWARD, the first rule states that all traffic from any source and destination is sent to the DOCKER-USER chain.
 In the DOCKER-USER chain, there is only one rule that all traffic from any source to any destination has a target RETURN, returning to the FORWARD chain.
 Then, the second rule in Chain FORWARD states that all traffic from any source and destination is sent to the DOCKER-ISOLATION-STAGE-1 chain.
