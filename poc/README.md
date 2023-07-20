@@ -16,3 +16,15 @@
     <li> Rule 1: All traffic from any interface to the docker0 interface is dropped. </li>
     <li> Rule 2: All other traffic is returned to its originating chain. </li>
 </ol>
+
+## Iptables Most important point 
+
+<details>
+    <summary> SHOW </summary>
+    <p>
+        ```
+        1. by default 
+
+        ```
+    </p>
+</details>
