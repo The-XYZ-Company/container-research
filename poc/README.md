@@ -1,2 +1,2 @@
 # Poc 
-## Docker networking and Iptables Relation 
+## Docker and iptables: a dynamic duo for networking virtuosity
