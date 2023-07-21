@@ -60,7 +60,7 @@ Chain DOCKER-USER (1 references)
 
 ### There is NAT table entry also for docker iptables rule 
 
-```
+```bash
 [root@ip-172-31-5-47 ~]# iptables -t nat -nvL 
 Chain PREROUTING (policy ACCEPT 4297 packets, 200K bytes)
  pkts bytes target     prot opt in     out     source               destination         
