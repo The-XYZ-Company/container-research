@@ -49,3 +49,12 @@ Chain DOCKER-USER (1 references)
 
 
 ```
+## Most important Note 
+
+<details>
+ <summary>click_here</summary>
+   <b> DOCKER chain is auto managed by Docker daemon so never edit it manually </b>
+</details>
+
+
+
