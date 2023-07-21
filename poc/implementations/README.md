@@ -147,7 +147,7 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS        
 [root@ip-172-31-5-47 ~]# 
 ```
 
-### check it 
+### You can also watch this Docker0 host setting
 
-[!play here](docker0.gif)
+[play here](docker0.gif)
 
