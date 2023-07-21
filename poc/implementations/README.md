@@ -92,8 +92,7 @@ Chain DOCKER (2 references)
    
     <br>
     <b> DOCKER-USER </b> can be used to block particular containers in the same bridge from access each other 
-    ```bash
-                        
+            
         [root@ip-172-31-5-47 ~]# iptables  -I DOCKER-USER -s 172.17.0.2 -d 172.17.0.3 -j DROP  
         [root@ip-172-31-5-47 ~]# docker exec -it c1 sh 
         / # ping 172.17.0.3
@@ -103,7 +102,6 @@ Chain DOCKER (2 references)
         2 packets transmitted, 0 packets received, 100% packet loss
         / # 
 
-    ```
 </details>
 
 
