@@ -4,7 +4,7 @@
 
 ### Docker and Docker-user CHAIN checking 
 
-```
+```sh
 [root@ip-172-31-5-47 test]# iptables -nvL 
 Chain INPUT (policy ACCEPT 1096K packets, 304M bytes)
  pkts bytes target     prot opt in     out     source               destination         
