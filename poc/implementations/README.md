@@ -149,5 +149,5 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS        
 
 ### check it 
 
-[!play here](docker0.mov)
+[!play here](docker0.gif)
 
