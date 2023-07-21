@@ -107,5 +107,12 @@ Chain DOCKER (2 references)
         / # 
 ```
 
+#  Restricting Docker host ◀️
 
+## Restricting docker host 
 
+### Restricting 0.0.0.0 in public port 
+
+***
+By default, the Docker daemon binds published container ports to the 0.0.0.0 address.
+***
