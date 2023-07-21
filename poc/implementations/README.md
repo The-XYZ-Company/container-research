@@ -119,4 +119,35 @@ By default, the Docker daemon binds published container ports to the 0.0.0.0 add
 ### Changing Setting 
 
 ---
+Change docker0 bridge to bind any public port on the host only with 127.0.0.1
+
+### configuration 
+
+___
+
+```bash
+[root@ip-172-31-5-47 ~]# cat  /etc/docker/daemon.json 
+{
+  "ip": "127.0.0.1"
+}
+```
+
+### Loading service
+
+```bash
+systemctl daemon-reload
+systemctl restart docker
+
+====>
+[root@ip-172-31-5-47 ~]# docker run -itd --name test -p 1122:80 nginx 
+08f78aba18cb39f4161302e953ca1c1867d589dfd87d7fc496a97cbc43423df5
+[root@ip-172-31-5-47 ~]# docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS        PORTS                    NAMES
+08f78aba18cb   nginx     "/docker-entrypoint.…"   2 seconds ago   Up 1 second   127.0.0.1:1122->80/tcp   test
+[root@ip-172-31-5-47 ~]# 
+```
+
+### check it 
+
+[!play here](docker0.mov)
 
