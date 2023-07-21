@@ -93,18 +93,15 @@ Chain DOCKER (2 references)
     <br>
     <b> DOCKER-USER </b> can be used to block particular containers in the same bridge from access each other 
     ```bash
-       Chain DOCKER-USER (1 references)
- pkts bytes target     prot opt in     out     source               destination         
-    0     0 DROP       all  --  *      *       172.17.0.2           172.17.0.3          
-    4   336 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
-[root@ip-172-31-5-47 ~]# iptables  -I DOCKER-USER -s 172.17.0.2 -d 172.17.0.3 -j DROP  ^C
-[root@ip-172-31-5-47 ~]# docker exec -it c1 sh 
-/ # ping 172.17.0.3
-PING 172.17.0.3 (172.17.0.3): 56 data bytes
-^C
---- 172.17.0.3 ping statistics ---
-2 packets transmitted, 0 packets received, 100% packet loss
-/ # 
+                        
+        [root@ip-172-31-5-47 ~]# iptables  -I DOCKER-USER -s 172.17.0.2 -d 172.17.0.3 -j DROP  
+        [root@ip-172-31-5-47 ~]# docker exec -it c1 sh 
+        / # ping 172.17.0.3
+        PING 172.17.0.3 (172.17.0.3): 56 data bytes
+        ^C
+        --- 172.17.0.3 ping statistics ---
+        2 packets transmitted, 0 packets received, 100% packet loss
+        / # 
 
     ```
 </details>
